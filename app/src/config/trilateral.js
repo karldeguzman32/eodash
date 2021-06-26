@@ -3869,12 +3869,12 @@ export const globalIndicators = [
   },
   {
     latlng: latLng([14.5995, 120.9842]),
-    id: 19680,
+    id: 19681,
     properties: {
       indicatorObject: {
         dataLoadFinished: true,
         aoi: latLng([14.5995, 120.9842]),
-        id: 19680,
+        id: 19681,
         aoiID: 'PH01',
         country: ['PH'],
         city: 'Manila',
