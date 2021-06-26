@@ -199,6 +199,7 @@ module.exports = [
       { code: 'SI', region: 'EUROPE' },
       { code: 'ES', region: 'EUROPE' },
       { code: 'JP', region: 'ASIA' },
+      { code: 'PH', region: 'ASIA' },
       { code: 'CN', region: 'ASIA' },
       { code: 'SG', region: 'ASIA' },
       { code: 'BD', region: 'ASIA' },

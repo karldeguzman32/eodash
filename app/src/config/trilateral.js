@@ -3867,6 +3867,89 @@ export const globalIndicators = [
       },
     },
   },
+  {
+    latlng: latLng([14.5995, 120.9842]),
+    id: 19680,
+    properties: {
+      indicatorObject: {
+        dataLoadFinished: true,
+        aoi: latLng([14.5995, 120.9842]),
+        id: 19680,
+        aoiID: 'PH01',
+        country: ['PH'],
+        city: 'Manila',
+        siteName: 'Manila',
+        description: 'Date comparison',
+        indicator: 'E13c',
+        lastIndicatorValue: 'normal',
+        indicatorName: 'Date comparison',
+        lastColorCode: 'BLUE',
+        eoSensor: ['Planet Labs/NASA (PlanetScope)'],
+        subAoi: {
+          type: 'FeatureCollection',
+          features: [{
+            type: 'Feature',
+            properties: {},
+            geometry: wkt.read('POLYGON((122.9072 15.793500000000003, 122.9072 13.405499999999998, 119.0612 13.405499999999998, 119.0612 15.793500000000003))').toJson(),
+          }],
+        },
+        time: ['2020-01-01', '2020-01-02', '2020-01-03', '2020-01-04', '2020-01-05', '2020-01-06', '2020-01-07', '2020-01-08', '2020-01-09', '2020-01-12', '2020-01-13', '2020-01-14', '2020-01-15', '2020-01-17', '2020-01-18', '2020-01-19', '2020-01-21', '2020-01-22', '2020-01-23', '2020-01-24', '2020-01-25', '2020-01-26', '2020-01-27', '2020-01-28', '2020-01-29', '2020-01-30', '2020-01-31', '2020-02-02', '2020-02-03', '2020-02-27', '2020-02-29', '2020-03-03', '2020-03-08', '2020-04-21', '2020-04-23', '2020-04-24', '2020-05-01', '2020-05-02', '2020-05-03', '2020-05-04', '2020-05-05', '2020-05-06', '2020-05-08', '2020-05-09', '2020-05-10', '2020-05-11', '2020-05-12', '2020-05-13', '2020-05-14', '2020-05-15', '2020-05-16', '2020-05-17', '2020-05-19', '2020-05-20', '2020-05-21', '2020-08-06', '2020-08-07', '2020-08-08', '2020-08-09', '2020-08-10'],
+        inputData: [''],
+        display: {
+          url: 'https://8ib71h0627.execute-api.us-east-1.amazonaws.com/v1/planet/{z}/{x}/{y}?date={time}&site=sc',
+          protocol: 'xyz',
+          tileSize: 256,
+          dateFormatFunction: (date) => DateTime.fromISO(date).toFormat('yyyy_MM_dd'),
+          features: {
+            dateFormatFunction: (date) => DateTime.fromISO(date).toFormat('yyyy_MM_dd'),
+            url: 'https://8ib71h0627.execute-api.us-east-1.amazonaws.com/v1/detections/ship/sc/{featuresTime}.geojson',
+          },
+        },
+      },
+    },
+  },
+
+  {
+    latlng: latLng([14.5995, 120.9842]),
+    id: 19680,
+    properties: {
+      indicatorObject: {
+        dataLoadFinished: true,
+        aoi: latLng([14.5995, 120.9842]),
+        id: 19680,
+        aoiID: 'PH01',
+        country: ['PH'],
+        city: 'Manila',
+        siteName: 'Manila',
+        description: 'Date comparison',
+        indicator: 'N5',
+        lastIndicatorValue: 'normal',
+        indicatorName: 'Date comparison',
+        lastColorCode: 'RED',
+        eoSensor: ['Nightlights'],
+        subAoi: {
+          type: 'FeatureCollection',
+          features: [{
+            type: 'Feature',
+            properties: {},
+            geometry: wkt.read('POLYGON((122.9072 15.793500000000003, 122.9072 13.405499999999998, 119.0612 13.405499999999998, 119.0612 15.793500000000003))').toJson(),
+          }],
+        },
+        time: ['2020-01-01', '2020-01-02', '2020-01-03', '2020-01-04', '2020-01-05', '2020-01-06', '2020-01-07', '2020-01-08', '2020-01-09', '2020-01-12', '2020-01-13', '2020-01-14', '2020-01-15', '2020-01-17', '2020-01-18', '2020-01-19', '2020-01-21', '2020-01-22', '2020-01-23', '2020-01-24', '2020-01-25', '2020-01-26', '2020-01-27', '2020-01-28', '2020-01-29', '2020-01-30', '2020-01-31', '2020-02-02', '2020-02-03', '2020-02-27', '2020-02-29', '2020-03-03', '2020-03-08', '2020-04-21', '2020-04-23', '2020-04-24', '2020-05-01', '2020-05-02', '2020-05-03', '2020-05-04', '2020-05-05', '2020-05-06', '2020-05-08', '2020-05-09', '2020-05-10', '2020-05-11', '2020-05-12', '2020-05-13', '2020-05-14', '2020-05-15', '2020-05-16', '2020-05-17', '2020-05-19', '2020-05-20', '2020-05-21', '2020-08-06', '2020-08-07', '2020-08-08', '2020-08-09', '2020-08-10'],
+        inputData: [''],
+        display: {
+          protocol: 'xyz',
+          maxNativeZoom: 18,
+          tileSize: 256,
+          url: 'https://8ib71h0627.execute-api.us-east-1.amazonaws.com/v1/{z}/{x}/{y}@1x?url=s3://covid-eo-data/bmhd_30m_monthly/BMHD_VNP46A2_ny_{time}_cog.tif&resampling_method=bilinear&rescale=0,255&bidx=1&color_map=inferno',
+          name: 'Nightlights',
+          dateFormatFunction: (date) => DateTime.fromISO(date).toFormat('yyyyMM'),
+          legendUrl: 'data/trilateral/N5-nighlights-legend.png',
+        },
+      },
+    },
+  },
+  //Nightlights
 ];
 
 
@@ -4065,6 +4148,16 @@ const slowdownIndicators = [
     time: ['2020-01-12'],
     cog: 'RiodeJaneiro_S1_TD155_SPM_20200112-20200217_20200324-20200429_th-0.3.cog',
   },
+  // {
+  //   aoi: latLng([14.5995, 120.9842]),
+  //   aoiID: 'PH01',
+  //   country: ['PH'],
+  //   city: 'Manila',
+  //   eoSensor: ['2020-01-12 compared to 2020-03-24 - 2020-04-29 - Derived from Sentinel-1'],
+  //   geometry: wkt.read('POLYGON((122.9072 15.793500000000003, 122.9072 13.405499999999998, 119.0612 13.405499999999998, 119.0612 15.793500000000003))').toJson(),
+  //   time: ['2020-01-12'],
+  //   cog: 'Manila_S1_TD155_SPM_20200112-20200217_20200324-20200429_th-0.3.cog',
+  // },
 ];
 
 const idOffset = 30000;
